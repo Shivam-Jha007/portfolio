@@ -6,11 +6,15 @@
   <title>Shivam Jha — Developer Portfolio</title>
   <meta name="description" content="Shivam Jha — Developer building intelligent web products and developer tools." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <canvas id="starfield" class="starfield-canvas" aria-hidden="true"></canvas>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
@@ -100,16 +104,16 @@ I focus on building practical tools and web applications that solve <em>real pro
         </div>
         <div class="about-highlights">
           <div class="highlight-card">
-            <span class="highlight-number">7+</span>
+            <span class="highlight-number" data-counter data-start="1" data-end="9">1</span>
             <span class="highlight-label">Shipped Projects</span>
           </div>
           <div class="highlight-card">
-            <span class="highlight-number">8+</span>
+            <span class="highlight-number" data-counter data-start="1" data-end="8">1</span>
             <span class="highlight-label">Tools and Technologies</span>
           </div>
           
           <div class="highlight-card">
-            <span class="highlight-number">150+</span>
+            <span class="highlight-number" data-counter data-start="10" data-end="150">10</span>
             <span class="highlight-label">DSA Problems Solved</span>
           </div>
           <div class="highlight-card">
@@ -151,6 +155,11 @@ I focus on building practical tools and web applications that solve <em>real pro
               recommends the right medical specialist, and helps locate nearby
               clinics with emergency support guidance.
             </p>
+            <div class="project-gallery" aria-label="sehatMaarg platform screenshots">
+              <img src="sehatmaarg/Screenshot%202026-03-11%20171539.png" alt="sehatMaarg homepage screenshot" loading="lazy" />
+              <img src="sehatmaarg/Screenshot%202026-03-11%20171551.png" alt="sehatMaarg specialist recommendations screenshot" loading="lazy" />
+              <img src="sehatmaarg/Screenshot%202026-03-11%20171559.png" alt="sehatMaarg nearby clinics screenshot" loading="lazy" />
+            </div>
             <div class="project-features">
               <span>AI Symptom Analysis</span>
               <span>Specialist Recommendation</span>
@@ -187,6 +196,11 @@ I focus on building practical tools and web applications that solve <em>real pro
               admin dashboard support, and Supabase integration for streamlined
               patient and booking workflows.
             </p>
+            <div class="project-gallery" aria-label="Clinic Appointment Website screenshots">
+              <img src="clinicTemp/Screenshot%202026-03-18%20222528.png" alt="Clinic Appointment Website landing page screenshot" loading="lazy" />
+              <img src="clinicTemp/Screenshot%202026-03-18%20222548.png" alt="Clinic Appointment Website booking workflow screenshot" loading="lazy" />
+              <img src="clinicTemp/Screenshot%202026-03-18%20222558.png" alt="Clinic Appointment Website dashboard screenshot" loading="lazy" />
+            </div>
             <div class="project-features">
               <span>Appointment Booking</span>
               <span>Admin Dashboard</span>
@@ -221,6 +235,11 @@ I focus on building practical tools and web applications that solve <em>real pro
               deadline-based task selection to prioritize what matters most and
               user authentication for a personalized experience.
             </p>
+            <div class="project-gallery" aria-label="Crystal platform screenshots">
+              <img src="crystal/Screenshot%202025-11-23%20125346.png" alt="Crystal dashboard screenshot" loading="lazy" />
+              <img src="crystal/Screenshot%202026-03-18%20222218.png" alt="Crystal task workflow screenshot" loading="lazy" />
+              <img src="crystal/Screenshot%202026-03-18%20222229.png" alt="Crystal goals and progress screenshot" loading="lazy" />
+            </div>
             <div class="project-features">
               <span>Midnight Goal Reset</span>
               <span>Deadline-based Priorities</span>
@@ -354,53 +373,53 @@ I focus on building practical tools and web applications that solve <em>real pro
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Frontend</h3>
           <div class="stack-tags">
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">JavaScript</span>
-            <span class="stack-tag">HTML</span>
-            <span class="stack-tag">CSS</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/react/61DAFB" alt="React icon" loading="lazy" />React</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript icon" loading="lazy" />JavaScript</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML icon" loading="lazy" />HTML</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/css/1572B6" alt="CSS icon" loading="lazy" />CSS</span>
           </div>
         </div>
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Backend</h3>
           <div class="stack-tags">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="Python icon" loading="lazy" />Python</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js icon" loading="lazy" />Node.js</span>
           </div>
         </div>
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Database</h3>
           <div class="stack-tags">
-            <span class="stack-tag">Supabase</span>           
-            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="Supabase icon" loading="lazy" />Supabase</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/firebase/DD2C00" alt="Firebase icon" loading="lazy" />Firebase</span>
           </div>
         </div>
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Tools &amp; Platforms</h3>
           <div class="stack-tags">
-            <span class="stack-tag">Git</span>
-            <span class="stack-tag">GitHub</span>
-            <span class="stack-tag">APIs</span>
-            <span class="stack-tag">Render</span>
-            <span class="stack-tag">Vercel</span>
-            <span class="stack-tag">VS Code</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/git/F05032" alt="Git icon" loading="lazy" />Git</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub icon" loading="lazy" />GitHub</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/swagger/85EA2D" alt="APIs icon" loading="lazy" />APIs</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/render/46E3B7" alt="Render icon" loading="lazy" />Render</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Vercel icon" loading="lazy" />Vercel</span>
+            <span class="stack-tag"><img class="stack-icon" src="Visual Studio Code (VS Code).svg" alt="VS Code icon" loading="lazy" />VS Code</span>
           </div>
         </div>
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Programming Languages</h3>
           <div class="stack-tags">
-            <span class="stack-tag">C</span>
-            <span class="stack-tag">Java</span>
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/c/00599C" alt="C icon" loading="lazy" />C</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/openjdk/FFFFFF" alt="Java icon" loading="lazy" />Java</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="Python icon" loading="lazy" />Python</span>
+            <span class="stack-tag"><img class="stack-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript icon" loading="lazy" />JavaScript</span>
           </div>
         </div>
         <div class="stack-category" data-animate>
           <h3 class="stack-category-title">Currently Exploring</h3>
           <div class="stack-tags">
-            <span class="stack-tag exploring">AI / ML</span>
-            <span class="stack-tag exploring">System Design</span>
-            <span class="stack-tag exploring">Express</span>
-            <span class="stack-tag exploring">MongoDB</span>
+            <span class="stack-tag exploring"><img class="stack-icon" src="ai.png" alt="AI icon" loading="lazy" />AI / ML</span>
+            <span class="stack-tag exploring"><img class="stack-icon" src="https://cdn.simpleicons.org/mermaid/00BFA5" alt="System design icon" loading="lazy" />System Design</span>
+            <span class="stack-tag exploring"><img class="stack-icon" src="https://cdn.simpleicons.org/express/FFFFFF" alt="Express icon" loading="lazy" />Express</span>
+            <span class="stack-tag exploring"><img class="stack-icon" src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB icon" loading="lazy" />MongoDB</span>
           </div>
         </div>
       </div>
@@ -583,7 +602,7 @@ I focus on building practical tools and web applications that solve <em>real pro
   <footer class="footer">
     <div class="container footer-inner">
       <p>Designed &amp; built by <span class="accent">Shivam Jha</span></p>
-      <p class="footer-note">Built with HTML, CSS &amp; JS — no frameworks, no templates.</p>
+      <p class="footer-note">Built with HTML, CSS,JS </p>
     </div>
   </footer>
 
